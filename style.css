@@ -2,32 +2,46 @@
 /* CSS Document */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,700;0,800;1,300;1,400;1,700;1,800&display=swap');
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
 h1 {
     font-family: "Cabinet Grotesk";
-    font-size: 170px;
+    font-size: 130px;
     font-style: normal;
     font-weight: 800;
 }
 
 h2 {
     font-family: "Cabinet Grotesk";
-    font-size: 40px;
+    font-size: 35px;
     font-style: normal;
     font-weight: 700;
+    color: #3A3271;
 }
 
 h3 {
     font-family: "Cabinet Grotesk";
-    font-size: 30px;
+    font-size: 28px;
     font-style: normal;
     font-weight: 800;
 }
 
 h4 {
     font-family: Poppins;
-    font-size: 20px;
+    font-size: 18px;
     font-style: normal;
     font-weight: 600;
+}
+
+p {
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
 }
 
 body {
@@ -37,7 +51,65 @@ body {
     font-weight: 400;
 }
 
+header{
+    background: #3F5DAA;
+    padding: 10px 170px 10px 170px;
+}
 
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+nav ul li a{
+color: #FFF7EF;
+text-decoration: none;
+}
+
+nav ul li a:hover{
+    background-color:#FFF7EF;
+    color: #3F5DAA;
+    border-radius: 20px;
+    padding: 6px 25px;
+    font-weight: 600;
+}
+
+nav ul {
+list-style: none;
+display: flex;
+gap: 70px;
+color: #FFF7EF;
+
+}
+
+.contacto-info {
+display: flex;
+padding: 30px 170px 30px 170px;
+justify-content: center;
+}
+
+.txt-contacto {
+    display: flex;
+    flex-direction: column;
+    padding-top: 40px;
+    width: 30%;
+    gap: 15px;
+}
+
+
+
+form{
+    width: 720px;
+    height: 770px;
+    background: #FFF7EF;
+    box-shadow: 14px 14px 12px 0px rgba(197, 187, 177, 0.44);
+    display: flex;
+    padding: 0px 0px 0px 0px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 35px;
+}
 
 input {
     background-color: #E4D7FF;
@@ -45,37 +117,19 @@ input {
     height: 30px
 }
 
+textarea{
+    width: 500px;
+    height: 120px
+}
 
 footer {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
     width: 100%;
     background-color: #3A3271;
-    justify-content: center;
     gap: 800px;
-    padding: 20px 0px 20px 0px;
+    padding: 20px 170px 20px 170px;
     box-sizing: border-box;
-}
-
-.footer-izquierda {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
     color: #FFF7EF;
-    line-height: 0;
-    /* agrege este atributo por que me quedan muy separadas las dos lineas del texto, no se como hacer para que quede como en figma */
-}
-
-.footer-derecha {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    color: #FFF7EF;
-    line-height: 0;
-    /* agrege este atributo por que me quedan muy separadas las dos lineas del texto, no se como hacer para que quede como en figma */
-}
-
-.footer-img {
-    display: flex;
-    align-items: center;
-    gap: 15px;
 }
