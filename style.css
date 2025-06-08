@@ -144,12 +144,31 @@ textarea {
 
 footer {
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    width: 100%;
+    align-items: center;
     background-color: #3A3271;
-    gap: 800px;
-    padding: 20px 170px 20px 170px;
-    box-sizing: border-box;
+    padding: 20px 60px;
     color: #FFF7EF;
+}
+
+@media screen and (max-width: 600px) {
+
+
+    .contacto-info {
+        flex-direction: column;
+        padding: 40px 20px;
+        align-items: center;
+        gap: 30px;
+    }
+
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+        padding: 20px;
+        background-color: aqua;
+    }
+
+
 }
