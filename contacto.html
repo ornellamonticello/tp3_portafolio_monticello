@@ -21,10 +21,40 @@
         </nav>
     </header>
 
-    <main></main>
+    <main>
+        <section>
+            <h2>¿Te interesan mis proyectos?</h2>
+            <h4>Trabajemos juntos!</h4>
+            <p>Completa el formulario para ponernos en contacto, podes enviarme tus propuestas y me pondre en contacto
+                lo antes posible.</p>
+        </section>
+
+        <p>* campos obligatorios</p>
+        <form method="post" action="mailto:monticello.ornella@gmail.com?subject=email enviado desde el formulario"
+            target="_blank" enctype="text/plain">
+            <label for="nombre y apellido">* Nombre y apellido</label>
+            <input type="text" name="nombre y apellido" id="nombre y apellido" maxlength="30"
+                placeholder="nombre completo" required>
+
+            <label for="correo electrónico">* Correo electrónico</label>
+            <input type="text" name="correo electrónico" id="correo electrónico" maxlength="30" placeholder="email"
+                required>
+
+            <label for="teléfono">* Teléfono</label>
+            <input type="tel" name="teléfono" id="teléfono" placeholder="cód. area + 1199990000" required>
+
+            <label for="contame tu propuesta">Contame tu propuesta</label>
+            <textarea name="contame tu propuesta" id="contame tu propuesta" maxlength="300"
+                placeholder="descripción"></textarea>
+
+            <input type="submit">
+        </form>
+
+    </main>
 
     <footer>
         <img src="img/ig_logo.svg" width="40" alt="logo instagram">
+        <!-- en ambos me falta el href y la etiqueta a pero no se si lo voy a dejar, depende si puedo solucionar el otro problema -->
         <img src="img/be_logo.svg" width="40" alt="logo behance">
         <div>
             <h4>Portafolio</h4>
