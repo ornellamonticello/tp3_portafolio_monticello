@@ -6,7 +6,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
+}
 
 h1 {
     font-family: "Cabinet Grotesk";
@@ -49,26 +49,28 @@ body {
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
+    background-color: #DDE6FF;
 }
 
-header{
+header {
     background: #3F5DAA;
     padding: 10px 170px 10px 170px;
 }
 
-nav{
+nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
 
 }
-nav ul li a{
-color: #FFF7EF;
-text-decoration: none;
+
+nav ul li a {
+    color: #FFF7EF;
+    text-decoration: none;
 }
 
-nav ul li a:hover{
-    background-color:#FFF7EF;
+nav ul li a:hover {
+    background-color: #FFF7EF;
     color: #3F5DAA;
     border-radius: 20px;
     padding: 6px 25px;
@@ -76,17 +78,18 @@ nav ul li a:hover{
 }
 
 nav ul {
-list-style: none;
-display: flex;
-gap: 70px;
-color: #FFF7EF;
+    list-style: none;
+    display: flex;
+    gap: 70px;
+    color: #FFF7EF;
 
 }
 
 .contacto-info {
-display: flex;
-padding: 30px 170px 30px 170px;
-justify-content: center;
+    display: flex;
+    padding: 110px 0px 110px 0px;
+    justify-content: center;
+    gap: 40px;
 }
 
 .txt-contacto {
@@ -99,27 +102,44 @@ justify-content: center;
 
 
 
-form{
-    width: 720px;
-    height: 770px;
+form {
+    width: 35%;
+    height: 100%;
     background: #FFF7EF;
     box-shadow: 14px 14px 12px 0px rgba(197, 187, 177, 0.44);
+    padding: 60px 60px 60px 60px;
     display: flex;
-    padding: 0px 0px 0px 0px;
     flex-direction: column;
-    align-items: flex-start;
-    gap: 35px;
+    align-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
 }
 
 input {
+    margin-bottom: 5px;
     background-color: #E4D7FF;
-    width: 500px;
-    height: 30px
+    width: 400px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
 }
 
-textarea{
-    width: 500px;
-    height: 120px
+label {
+    height: 20px;
+}
+
+textarea {
+    width: 400px;
+    height: 120px;
+    border-radius: 5px;
+    border: none;
+    background-color: #E4D7FF;
+}
+
+.button-form {
+    width: 100px;
+    height: 40px;
+    border: none;
 }
 
 footer {
