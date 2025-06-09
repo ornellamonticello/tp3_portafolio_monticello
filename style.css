@@ -103,8 +103,6 @@ nav ul {
 
 
 form {
-    width: 30%;
-    height: 100%;
     background: #FFF7EF;
     box-shadow: 14px 14px 12px 0px rgba(197, 187, 177, 0.44);
     padding: 60px 60px 60px 60px;
@@ -153,13 +151,50 @@ footer {
 
 @media screen and (max-width: 600px) {
 
-
     .contacto-info {
+        display: flex;
+        padding: 10px 0px 10px 0px;
         flex-direction: column;
-        padding: 40px 20px;
-        align-items: center;
-        gap: 30px;
+        gap: 40px;
     }
+
+    .txt-contacto {
+        display: flex;
+        padding: 40px 10px 40px 10px;
+        gap: 15px;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    form {
+        background: #FFF7EF;
+        padding: 30px 10px 30px 10px;
+        display: flex;
+        gap: 15px;
+    }
+    
+    input {
+        margin-bottom: 5px;
+        background-color: #E4D7FF;
+        width: 100%;
+        height: 30px;
+        border-radius: 5px;
+        border: none;
+    }
+    
+    label {
+        height: 20px;
+    }
+    
+    textarea {
+        width: 400px;
+        height: 120px;
+        border-radius: 5px;
+        border: none;
+        background-color: #E4D7FF;
+    }
+
+
 
 
     footer {
