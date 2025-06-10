@@ -83,7 +83,7 @@ nav ul {
 
 }
 
-.abrir-menu .cerrar-menu {
+.abrir-menu, .cerrar-menu {
     display: none;
 }
 
