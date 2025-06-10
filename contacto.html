@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Monticello Portafolio</title>
     <link rel="icon" href="favicon.svg" type="imagen">
     <link href="style.css" rel="stylesheet" type="text/css">
@@ -10,9 +11,14 @@
 
 <body>
     <header>
-        <nav>
-            <img src="img/flor.svg" width="55" alt="logo">
-            <ul>
+        <a href="index.html">
+            <img class="logo" src="img/flor.svg" width="55" alt="Logo">
+        </a>
+        <button id="abrir" class="abrir-menu">Abrir</button>
+
+        <nav id="nav" class="nav">
+            <button id="cerrar" class="cerrar-menu">Cerrar</button>
+            <ul class="nav-list">
                 <li><a href="home">home</a></li>
                 <li><a href="proyectos">proyectos</a></li>
                 <li><a href="curriculum">curriculum</a></li>
@@ -67,6 +73,7 @@
             <p>©2025 Ornella. todos los derechos reservados</p>
         </div>
     </footer>
+    <script src="./main.js"></script>
 </body>
 
 </html>
