@@ -4,14 +4,19 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ornella Daniela Monticello Portafolio de diseño">
+    <meta name="author" content="Ornella Daniela Monticello">
+    <meta name="keywords"
+        content="diseño gráfico, portafolio, curriculum, identidad visual, ilustración, diseño web, monticello, proyectos creativos">
     <title>Monticello Portafolio</title>
-    <link rel="icon" href="favicon.svg" type="imagen">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
     <link href="style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="cabinet-grotesk.css">
 </head>
 
-<body>
+<body class="body-curriculum">
     <header>
-        <a href="index.html">
+        <a href="index.html" target="_self">
             <img class="logo" src="img/flor.svg" width="55" alt="Logo">
         </a>
         <button id="abrir" class="abrir-menu">Abrir</button>
@@ -19,51 +24,55 @@
         <nav id="nav" class="nav">
             <button id="cerrar" class="cerrar-menu">Cerrar</button>
             <ul class="nav-list">
-                <li><a href="home">home</a></li>
-                <li><a href="proyectos">proyectos</a></li>
-                <li><a href="curriculum">curriculum</a></li>
-                <li><a href="contacto">contacto</a></li>
+                <li><a href="index.html" target="_self">home</a></li>
+                <li><a href="proyectos.html" target="_self">proyectos</a></li>
+                <li><a href="curriculum.html" target="_self">curriculum</a></li>
+                <li><a href="contacto.html" target="_self">contacto</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
 
-        <h1>Curriculum</h1>
-        <section>
-            <h3>Datos personales</h3>
-            <address>
-                <ul>
-                    <li>
-                        <h4>Nombre y apellido</h4>
-                        <p>Ornella Daniela Monticello</p>
-                    </li>
-
-                    <li>
-                        <h4>Domicilio</h4>
-                        <p>Quilmes</p>
-                    </li>
-                </ul>
-
-                <ul>
-                    <li>
-                        <h4>Teléfono</h4>
-                        <p><a href="tel:+54119009-0099">119009-0099</a></p>
-                    </li>
-
-                    <li>
-                        <h4>Correo electrónico</h4>
-                        <p><a href="mailto:monticello.ornella@gmail.com" target="_top">
-                                monticello.ornella@gmail.com</a></p>
-                    </li>
-                </ul>
-
-            </address>
-        </section>
+        <div class="main-cv-grid">
 
 
-        <div>
-            <section>
+            <h1 class="titulo-cv">Curriculum</h1>
+
+            <section class="datos-personales">
+                <h2>Datos personales</h2>
+                <address>
+                    <ul>
+                        <li>
+                            <h4>Nombre y apellido</h4>
+                            <p>Ornella Daniela Monticello</p>
+                        </li>
+
+                        <li>
+                            <h4>Domicilio</h4>
+                            <p>Quilmes</p>
+                        </li>
+                    </ul>
+
+                    <ul>
+                        <li>
+                            <h4>Teléfono</h4>
+                            <p><a href="tel:+54119009-0099">119009-0099</a></p>
+                        </li>
+
+                        <li>
+                            <h4>Correo electrónico</h4>
+                            <p><a href="mailto:monticello.ornella@gmail.com" target="_top">
+                                    monticello.ornella@gmail.com</a></p>
+                        </li>
+                    </ul>
+
+                </address>
+            </section>
+
+
+
+            <section class="estudios">
                 <h2>Estudios</h2>
                 <ol>
                     <li>
@@ -81,16 +90,15 @@
                 </ol>
             </section>
 
-            <section>
+            <section class="idiomas">
                 <h2>Idiomas</h2>
                 <ul>
                     <li>Castellano</li>
                     <li>Nivel báscio de inglés</li>
                 </ul>
             </section>
-        </div>
-        <div>
-            <section>
+
+            <section class="experiencia">
                 <h2>Experiencia</h2>
                 <ol>
                     <li>
@@ -111,7 +119,7 @@
                 </ol>
             </section>
 
-            <section>
+            <section class="habilidades">
                 <h2>Habilidades</h2>
                 <ul>
                     <li>Manejo de Adobe illustrator- nivel avanzado</li>
@@ -123,7 +131,6 @@
                 </ul>
             </section>
         </div>
-
     </main>
 
     <footer>

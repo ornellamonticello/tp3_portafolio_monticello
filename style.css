@@ -13,6 +13,7 @@ h1 {
     font-size: 130px;
     font-style: normal;
     font-weight: 800;
+    color: #3F5DAA;
 }
 
 h2 {
@@ -49,8 +50,9 @@ body {
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
-    background-color: #DDE6FF;
+    cursor: url('img/cursor.png'), auto;
 }
+
 
 header {
     width: 100%;
@@ -59,9 +61,11 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: sticky;
+    top: 0px;
 }
 
-
+/* de aca para abajo todos los ajustes de nav general*/
 nav ul li a {
     color: #FFF7EF;
     text-decoration: none;
@@ -71,7 +75,7 @@ nav ul li a {
     background-color: #FFF7EF;
     color: #3F5DAA;
     border-radius: 20px;
-    padding: 6px 25px;
+    padding: 4px 10px;
     font-weight: 600;
 }
 
@@ -83,8 +87,139 @@ nav ul {
 
 }
 
-.abrir-menu, .cerrar-menu {
+.abrir-menu,
+.cerrar-menu {
     display: none;
+}
+
+a:visited {
+    color: #B18DFB;
+}
+
+/* de aca para abajo todos los ajustes de index.html*/
+.body-index {
+    background-color: #FFF7EF;
+    background-image: url(img/fondo-index.svg);
+    background-repeat: no-repeat;
+
+}
+
+.main-index {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px;
+}
+
+.title {
+    margin: 180px 0px 400px 0px;
+}
+
+.section-index {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 40px;
+    max-width: 50%;
+    text-align: left;
+    margin: 260px 0px 260px 0px;
+}
+
+.texto-index {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+/* de aca para abajo todos los ajustes de proyectos.html*/
+/* spoleir: aún no hay nada*/
+
+/* de aca para abajo todos los ajustes de curriculum.html*/
+
+.body-curriculum {
+    background-color: #FFF7EF;
+}
+
+.main-cv-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: auto;
+    gap: 20px;
+    padding: 40px;
+    max-width: 70%;
+    margin: 0 auto;
+}
+
+.titulo-cv {
+    grid-column: 3 / 5;
+    text-align: center;
+}
+
+.datos-personales {
+    grid-column: 2 / 4;
+    background-color: #E4D7FF;
+    border-radius: 12px;
+    padding: 50px 90px 50px 90px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+address {
+    display: flex;
+    justify-content: space-between
+}
+
+
+.main-cv-grid ol {
+    list-style-type: none
+}
+
+
+.estudios {
+    grid-column: 3 / 1;
+    background-color: #DDE6FF;
+    border-radius: 12px;
+    padding: 50px 90px 50px 90px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    justify-self: self-end;
+    height: 300px
+}
+
+
+.experiencia {
+    grid-column: 3 / 5;
+    grid-row: 3;
+    background-color: #E4D7FF;
+    border-radius: 12px;
+    padding: 50px 90px 50px 90px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    justify-self: self-start;
+}
+
+.idiomas {
+    grid-column: 2;
+    background-color: #E4D7FF;
+    border-radius: 12px;
+    padding: 50px 90px 50px 90px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    justify-self: self-end;
+    height: 200px;
+}
+
+.habilidades {
+    grid-column: 5 / 3;
+    background-color: #DDE6FF;
+    border-radius: 12px;
+    padding: 50px 90px 50px 90px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    justify-self: self-start;
+}
+
+
+
+/* de aca para abajo todos los ajustes de contacto.html */
+
+.body-contacto {
+    background-color: #DDE6FF;
 }
 
 .contacto-info {
@@ -101,8 +236,6 @@ nav ul {
     width: 30%;
     gap: 15px;
 }
-
-
 
 form {
     background: #FFF7EF;
@@ -142,6 +275,7 @@ textarea {
     border: none;
 }
 
+/* de aca footer general */
 footer {
     display: flex;
     justify-content: space-between;
@@ -151,13 +285,13 @@ footer {
     color: #FFF7EF;
 }
 
+/* de aca para abajo medidas responsive mobile */
 @media screen and (max-width: 600px) {
 
     header {
         padding: 20px;
         width: 100%;
     }
-
 
     .abrir-menu,
     .cerrar-menu {
@@ -232,9 +366,6 @@ footer {
         border: none;
         background-color: #E4D7FF;
     }
-
-
-
 
     footer {
         flex-direction: column;
