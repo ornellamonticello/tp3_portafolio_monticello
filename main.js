@@ -10,29 +10,16 @@ cerrar.addEventListener("click", () => {
     nav.classList.remove("visible");
 });
 
-/* galeria de imagenes afiche*/
-
-  function cambiarDisplay(id, visibilidad) {
-    document.getElementById(id).style.display = visibilidad;
-  }
-
-  function mostrarGaleria(id) {
-    cambiarDisplay(id, 'flex');
-  }
-
-  function ocultarGaleria(id) {
-    cambiarDisplay(id, 'none');
-  }
-
-
-/* galeria de imagenes revista*/
-
-  function mostrarGaleria(id) {
-    cambiarDisplay(id, 'flex');
-    document.body.classList.add('bloquear-scroll');
+function mostrarGaleria(id, bloquearScroll = false) {
+    document.getElementById(id).style.display = 'flex';
+    if (bloquearScroll) {
+      document.body.classList.add('bloquear-scroll');
+    }
   }
   
-  function ocultarGaleria(id) {
-    cambiarDisplay(id, 'none');
-    document.body.classList.remove('bloquear-scroll');
+  function ocultarGaleria(id, bloquearScroll = false) {
+    document.getElementById(id).style.display = 'none';
+    if (bloquearScroll) {
+      document.body.classList.remove('bloquear-scroll');
+    }
   }
