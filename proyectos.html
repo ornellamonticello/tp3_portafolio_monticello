@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="cabinet-grotesk.css">
 </head>
 
-<body>
+<body class="body-proyectos">
     <header>
         <a href="index.html" target="_self">
             <img class="logo" src="img/flor.svg" width="55" alt="Logo">
@@ -32,43 +32,121 @@
         </nav>
     </header>
 
-    <main>
-        <h1>Proyectos</h1>
-        <article>
-            <img src="img/1_afiche.jpg" width="460" height="630" alt="afiche de diseño">
-            <h3>Pieza gráfica: Afiche</h3>
-            <p>Fue realizado en el año 2023 para la materia taller de diseño II, en colaboración con Ornella Negro. En
-                esta serie de afiches se buscó utilizar como elemento principal el papel jugando con sus formas y
-                texturas. Para representar
-                a las diferentes obras del teatro “Red teatral sur”.</p>
-            <h4>aplicaciones utilizadas</h4>
-            <img src="img/ai_logo_adobe.svg" width="50" alt="adobe ilustrator">
-            <img src="img/ps_logo_adobe.svg" width="50" alt="adobe photoshop">
+    <main class="main-proyecto">
+
+        <article class="proyecto-afiche">
+            <h1 class="titulo-vertical">Proyectos</h1>
+
+
+            <a href="javascript:void(0)" onClick="mostrarGaleria('galeria-afiche')">
+                <img src="img/1_afiche.jpg" width="460" height="630" alt="afiche de diseño">
+            </a>
+
+            <div class="contenedor">
+                <h3 class="subtitulo">Pieza gráfica: Afiche</h3>
+                <p>Fue realizado en el año 2023 para la materia Taller de Diseño II, en colaboración con Ornella Negro. En esta serie de afiches se buscó utilizar como elemento principal el papel, jugando con sus formas y texturas, para representar las diferentes obras del teatro Red Teatral Sur.</p>
+
+                <h4>Aplicaciones utilizadas</h4>
+
+                <div class="img-adobe">
+                    <img src="img/ai_logo_adobe.svg" width="50" alt="adobe ilustrator">
+                    <img src="img/ps_logo_adobe.svg" width="50" alt="adobe photoshop">
+                </div>
+            </div>
+
         </article>
 
-        <article>
-            <img src="img/1_revista.jpg" width="460" height="630" alt="revista de diseño">
-            <h3>Pieza gráfica: Revista</h3>
-            <p>Fue realizado en el año 2024 para la materia Espacio tipográfico III. Es una revista en formato A4. “La
-                cultura del café” se desarrolla sobre los orígenes del café, innovaciones y referentes en el rubro. La
-                información se acompaña de gráficos e infografías para lograr mayor compresión. </p>
-            <h4>aplicaciones utilizadas</h4>
-            <img src="img/ai_logo_adobe.svg" width="50" alt="adobe ilustrator">
-            <img src="img/ps_logo_adobe.svg" width="50" alt="adobe photoshop">
-            <img src="img/id_logo_adobe.svg" width="50" alt="adobe indesing">
+        <article id="galeria-afiche" class="galeria">
+            <div id="fondo-galeria"></div>
+            <ul class="galeria-oculta">
+                <li class="fraccion-galeria" id="afiche-1">
+                    <a href="#" class="primer-ultima-flecha"><img src="img/back.svg" width="50"></a>
+                    <img class="close" src="img/close.svg" width="50" onClick="ocultarGaleria('galeria-afiche')">
+                    <a href="#afiche-2"><img src="img/next.svg" width="50"></a>
+                </li>
+                <li class="fraccion-galeria" id="afiche-2">
+                    <a href="#afiche-1"><img src="img/back.svg" width="50"></a>
+                    <img class="close" src="img/close.svg" width="50" onClick="ocultarGaleria('galeria-afiche')">
+                    <a href="#afiche-3"><img src="img/next.svg" width="50"></a>
+                </li>
+                <li class="fraccion-galeria" id="afiche-3">
+                    <a href="#afiche-2"><img src="img/back.svg" width="50"></a>
+                    <img class="close" src="img/close.svg" width="50" onClick="ocultarGaleria('galeria-afiche')">
+                    <a href="#" class="primer-ultima-flecha"><img src="img/next.svg" width="50"></a>
+                </li>
+            </ul>
         </article>
 
-        <article>
-            <img src="img/1_identidad-visual.jpg" width="460" height="630" alt="identidad visual">
-            <h3>Pieza gráfica: Identidad visual</h3>
-            <p>Fue realizado en el año 2023 para la materia taller de diseño III. “Cycross” es una marca dedicada a la
-                venta de motos, indumentaria y accesorios, con ubicación ficticia en las lomitas street, se muestra la
-                aplicación de la marca en las distintas superficies.</p>
-            <h4>aplicaciones utilizadas</h4>
-            <img src="img/ai_logo_adobe.svg" width="50" alt="adobe ilustrator">
-            <img src="img/ps_logo_adobe.svg" width="50" alt="adobe photoshop">
-            <img src="img/id_logo_adobe.svg" width="50" alt="adobe indesing">
+        <article class="proyecto-revista">
+
+            <div class="contenedor-revista">
+                <h3 class="subtitulo-revista">Pieza gráfica: Revista</h3>
+                <p>Fue realizado en el año 2024 para la materia Espacio tipográfico III. Es una revista en formato A4.
+                    “La
+                    cultura del café” se desarrolla sobre los orígenes del café, innovaciones y referentes en el rubro.
+                    La
+                    información se acompaña de gráficos e infografías para lograr mayor compresión. </p>
+                <h4>aplicaciones utilizadas</h4>
+
+                <div>
+                    <img src="img/ai_logo_adobe.svg" width="50" alt="adobe ilustrator">
+                    <img src="img/ps_logo_adobe.svg" width="50" alt="adobe photoshop">
+                    <img src="img/id_logo_adobe.svg" width="50" alt="adobe indesing">
+                </div>
+            </div>
+            <a href="javascript:void(0)" onClick="mostrarGaleria('galeria-revista')">
+                <img src="img/1_revista.jpg" width="460" height="630" alt="revista de diseño">
+            </a>
+
+
         </article>
+
+        <article id="galeria-revista" class="galeria">
+            <div id="fondo-galeria">
+                <ul class="galeria-oculta">
+                    <li class="fraccion-galeria" id="revista-1">
+                        <a href="#" class="primer-ultima-flecha"><img src="img/back.svg" width="50"></a>
+                        <img class="close" src="img/close.svg" width="50" onClick="ocultarGaleria('galeria-revista')">
+                        <a href="#revista-2"><img src="img/next.svg" width="50"></a>
+                    </li>
+                    <li class="fraccion-galeria" id="revista-2">
+                        <a href="#revista-1"><img src="img/back.svg" width="50"></a>
+                        <img class="close" src="img/close.svg" width="50" onClick="ocultarGaleria('galeria-revista')">
+                        <a href="#revista-3"><img src="img/next.svg" width="50"></a>
+                    </li>
+                    <li class="fraccion-galeria" id="revista-3">
+                        <a href="#revista-2"><img src="img/back.svg" width="50"></a>
+                        <img class="close" src="img/close.svg" width="50" onClick="ocultarGaleria('galeria-revista')">
+                        <a href="#" class="primer-ultima-flecha"><img src="img/next.svg" width="50"></a>
+                    </li>
+                </ul>
+            </div>
+        </article>
+
+
+
+
+        <article class="proyecto-identidad-visual">
+
+            <a href="#foto-identidad"><img src="img/1_identidad-visual.jpg" width="460" height="630"
+                    alt="identidad visual"></a>
+
+            <div class="contenedor-identidad-visual">
+                <h3 class="subtitulo">Pieza gráfica: Identidad visual</h3>
+                <p>Fue realizado en el año 2023 para la materia taller de diseño III. “Cycross” es una marca dedicada a
+                    la
+                    venta de motos, indumentaria y accesorios, con ubicación ficticia en las lomitas street, se muestra
+                    la
+                    aplicación de la marca en las distintas superficies.</p>
+                <h4>aplicaciones utilizadas</h4>
+
+                <div>
+                    <img src="img/ai_logo_adobe.svg" width="50" alt="adobe ilustrator">
+                    <img src="img/ps_logo_adobe.svg" width="50" alt="adobe photoshop">
+                    <img src="img/id_logo_adobe.svg" width="50" alt="adobe indesing">
+                </div>
+        </article>
+        </div>-->
     </main>
 
     <footer>

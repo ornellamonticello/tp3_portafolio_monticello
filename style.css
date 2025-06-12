@@ -63,6 +63,7 @@ header {
     justify-content: space-between;
     position: sticky;
     top: 0px;
+    z-index: 10;
 }
 
 /* de aca para abajo todos los ajustes de nav general*/
@@ -132,7 +133,159 @@ a:visited {
 }
 
 /* de aca para abajo todos los ajustes de proyectos.html*/
-/* spoleir: aún no hay nada*/
+.main-proyecto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(img/proyectos_backgound.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.titulo-vertical {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    padding: 70px;
+
+}
+
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 10px;
+}
+
+.proyecto-afiche {
+    display: flex;
+    width: 80%;
+    padding: 60px 100px 0px 0px;
+}
+
+.subtitulo {
+    background-color: #DDE6FF;
+    width: auto;
+    height: 60px;
+    border-radius: 15px;
+    padding: 15px;
+
+}
+
+.contenedor-revista {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 35px 40px 0px;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 10px;
+    width: 55%;
+}
+
+.subtitulo-revista {
+    background-color: #FFF7EF;
+    width: auto;
+    height: 60px;
+    border-radius: 15px;
+    padding: 15px;
+
+}
+
+.proyecto-revista {
+    display: flex;
+    width: 74%;
+    padding: 190px;
+}
+
+.proyecto-identidad-visual {
+    display: flex;
+    width: 58%;
+    padding: 80px 80px 140px 80px;
+}
+
+.contenedor-identidad-visual {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 0px 40px 35px;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 10px;
+    width: 55%;
+}
+
+/* galeria*/
+#galeria-afiche {
+    display: none;
+    width: 100%;
+    justify-content: center;
+    height: 100vh;
+    background-color: #000000;
+    position: absolute;
+    top: 0;
+    z-index: 10;
+    /* overflow: hidden;*/
+}
+
+#galeria-oculta {
+    display: flex;
+    width: 100%;
+    max-width: 1450px;
+    overflow: hidden;
+    z-index: 20;
+    /*position: fixed;*/
+    top: 0;
+}
+
+.fraccion-galeria {
+    display: flex;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 100%;
+    min-width: 1450px;
+    height: 100vh;
+    justify-content: space-between;
+    z-index: 30;
+    position: relative;
+}
+
+#fondo-galeria {
+    background-color: black;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 10;
+}
+
+.primer-ultima-flecha {
+    visibility: hidden;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 2%;
+}
+
+/*imagenes de galeria afiche*/
+
+#afiche-1 {
+    background-image: url("img/1_afiche.jpg");
+}
+
+#afiche-2 {
+    background-image: url("img/2_afiche.jpg");
+}
+
+#afiche-3 {
+    background-image: url("img/3_afiche.jpg");
+}
+
+
 
 /* de aca para abajo todos los ajustes de curriculum.html*/
 
