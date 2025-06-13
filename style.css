@@ -165,17 +165,24 @@ a:visited {
 }
 
 @keyframes flecha_index_bounce {
-    0%, 20%, 50%, 80%, 100% {
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
         transform: translateX(-50%) translateY(0);
-      }
-      40% {
-        transform: translateX(-50%) translateY(10px);
-      }
-      60% {
-        transform: translateX(-50%) translateY(5px);
-      }
     }
-    
+
+    40% {
+        transform: translateX(-50%) translateY(10px);
+    }
+
+    60% {
+        transform: translateX(-50%) translateY(5px);
+    }
+}
+
 
 .section-index {
     display: flex;
@@ -322,14 +329,20 @@ a:visited {
 
 #afiche-1 {
     background-image: url("img/1_afiche.jpg");
+    width: 580px;
+    height: 800px;
 }
 
 #afiche-2 {
     background-image: url("img/2_afiche.jpg");
+    width: 580px;
+    height: 800px;
 }
 
 #afiche-3 {
     background-image: url("img/3_afiche.jpg");
+    width: 580px;
+    height: 800px;
 }
 
 
@@ -378,16 +391,23 @@ a:visited {
     z-index: 10;
 }
 
+/*imagenes de galeria revista*/
 #revista-1 {
     background-image: url("img/3_revista.jpg");
+    width: 580px;
+    height: 800px;
 }
 
 #revista-2 {
     background-image: url("img/1_revista.jpg");
+    width: 580px;
+    height: 800px;
 }
 
 #revista-3 {
     background-image: url("img/2_revista.jpg");
+    width: 580px;
+    height: 800px;
 }
 
 
@@ -412,7 +432,7 @@ a:visited {
 }
 
 .titulo-cv {
-    grid-column: 3 / 5;
+    grid-column: 2 / 4;
     text-align: center;
 }
 
@@ -421,7 +441,7 @@ a:visited {
     background-color: #E4D7FF;
     border-radius: 12px;
     padding: 50px 90px 50px 90px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 5px 5px rgba(77, 21, 94, 0.2);
 }
 
 address {
@@ -440,7 +460,7 @@ address {
     background-color: #DDE6FF;
     border-radius: 12px;
     padding: 50px 90px 50px 90px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 5px 5px rgba(11, 31, 73, 0.2);
     justify-self: self-end;
     height: 300px
 }
@@ -452,7 +472,7 @@ address {
     background-color: #E4D7FF;
     border-radius: 12px;
     padding: 50px 90px 50px 90px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 5px 5px rgba(77, 21, 94, 0.2);
     justify-self: self-start;
 }
 
@@ -461,7 +481,7 @@ address {
     background-color: #E4D7FF;
     border-radius: 12px;
     padding: 50px 90px 50px 90px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 5px 5px rgba(77, 21, 94, 0.2);
     justify-self: self-end;
     height: 200px;
 }
@@ -471,7 +491,7 @@ address {
     background-color: #DDE6FF;
     border-radius: 12px;
     padding: 50px 90px 50px 90px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 5px 5px rgba(11, 31, 73, 0.2);
     justify-self: self-start;
 }
 
