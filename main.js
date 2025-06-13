@@ -23,3 +23,9 @@ function mostrarGaleria(id, bloquearScroll = false) {
       document.body.classList.remove('bloquear-scroll');
     }
   }
+
+
+  window.addEventListener("click", function () {
+    const audio = document.getElementById("musica");
+    audio.play();
+  }, { once: true }); 

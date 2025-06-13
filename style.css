@@ -113,6 +113,13 @@ a:visited {
     padding: 60px;
 }
 
+.section-index p {
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+}
+
 .title {
     margin: 180px 0px 400px 0px;
 }
@@ -124,17 +131,51 @@ a:visited {
 .flor-violeta {
     top: 245px;
     right: 824px;
+    animation: girar_flor_violeta_lila 5s linear infinite;
 }
 
 .flor-lila-1 {
     top: 360px;
     right: 870px;
+    animation: girar_flor_violeta_lila 2s linear infinite;
 }
 
 .flor-lila-2 {
     top: 400px;
     right: 825px;
+    animation: girar_flor_violeta_lila 2s linear infinite;
 }
+
+
+@keyframes girar_flor_violeta_lila {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.flecha_botom_index {
+    position: absolute;
+    animation: flecha_index_bounce 2s infinite;
+    top: 770px;
+    right: 1070px;
+}
+
+@keyframes flecha_index_bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateX(-50%) translateY(0);
+      }
+      40% {
+        transform: translateX(-50%) translateY(10px);
+      }
+      60% {
+        transform: translateX(-50%) translateY(5px);
+      }
+    }
+    
 
 .section-index {
     display: flex;
@@ -477,6 +518,7 @@ input {
     height: 30px;
     border-radius: 5px;
     border: none;
+    padding: 15px;
 }
 
 label {
@@ -489,6 +531,7 @@ textarea {
     border-radius: 5px;
     border: none;
     background-color: #E4D7FF;
+    padding: 15px;
 }
 
 .button-form {
@@ -520,15 +563,15 @@ footer {
     }
 
     h2 {
-        font-size: 1.75rem; 
+        font-size: 1.75rem;
     }
 
     h4 {
-        font-size: 1rem; 
+        font-size: 1rem;
     }
 
     p {
-        font-size: 0.8125rem; 
+        font-size: 0.8125rem;
     }
 
 
@@ -584,6 +627,7 @@ footer {
         padding: 30px 10px 30px 10px;
         display: flex;
         gap: 15px;
+        box-shadow: none;
     }
 
     input {
@@ -593,6 +637,7 @@ footer {
         height: 30px;
         border-radius: 5px;
         border: none;
+        padding: 15px;
     }
 
     label {
@@ -605,6 +650,7 @@ footer {
         border-radius: 5px;
         border: none;
         background-color: #E4D7FF;
+        padding: 15px;
     }
 
     footer {
